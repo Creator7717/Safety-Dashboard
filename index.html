@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steel Industry Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Steel Industry Dashboard</h1>
+
+  <!-- File Upload Section -->
+  <h2>Upload Daily Excel File</h2>
+  <input type="file" id="excelFileInput" accept=".xlsx, .xls" />
+
+  <!-- Metrics Display Section -->
+  <h2>Metrics</h2>
+  <div id="metrics">
+    <!-- Metrics will be displayed here -->
+  </div>
+
+  <!-- Critical Jobs Input Section -->
+  <h2>Critical Jobs</h2>
+  <textarea id="criticalJobsInput" placeholder="Enter critical jobs here..."></textarea>
+  <button id="updateJobsButton">Update Jobs</button>
+  <div id="criticalJobsDisplay">
+    <!-- Critical jobs will be displayed here -->
+  </div>
+
+  <!-- Include SheetJS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- Include Your Script -->
+  <script src="script.js"></script>
+</body>
+</html>
